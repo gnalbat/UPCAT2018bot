@@ -58,30 +58,30 @@ $class = new compareImages;
 
 //image comparing, if no difference, tweet that results are not yet out
 if ($class->compare('comparison.jpg','latest.jpg') < 10)
-{if (time() > strtotime( '00:03AM' ) && time() < strtotime( '00:08AM' ) ||
-    time() > strtotime( '01:03AM' ) && time() < strtotime( '01:08AM' ) ||
-    time() > strtotime( '02:03AM' ) && time() < strtotime( '02:08AM' ) ||
-    time() > strtotime( '03:03AM' ) && time() < strtotime( '03:08AM' ) ||
-    time() > strtotime( '04:03AM' ) && time() < strtotime( '04:08AM' ) ||
-    time() > strtotime( '05:03AM' ) && time() < strtotime( '05:08AM' ) ||
-    time() > strtotime( '06:03AM' ) && time() < strtotime( '06:08AM' ) ||
-    time() > strtotime( '07:03AM' ) && time() < strtotime( '07:08AM' ) ||
-    time() > strtotime( '08:03AM' ) && time() < strtotime( '08:08AM' ) ||
-    time() > strtotime( '09:03AM' ) && time() < strtotime( '09:08AM' ) ||
-    time() > strtotime( '10:03AM' ) && time() < strtotime( '10:08AM' ) ||
-    time() > strtotime( '11:03AM' ) && time() < strtotime( '11:08AM' ) ||
-    time() > strtotime( '12:03AM' ) && time() < strtotime( '12:08AM' ) ||
-    time() > strtotime( '13:03AM' ) && time() < strtotime( '13:08AM' ) ||
-    time() > strtotime( '14:03AM' ) && time() < strtotime( '14:08AM' ) ||
-    time() > strtotime( '15:03AM' ) && time() < strtotime( '15:08AM' ) ||
-    time() > strtotime( '16:03AM' ) && time() < strtotime( '16:08AM' ) ||
-    time() > strtotime( '17:03AM' ) && time() < strtotime( '17:08AM' ) ||
-    time() > strtotime( '18:03AM' ) && time() < strtotime( '18:08AM' ) ||
-    time() > strtotime( '19:03AM' ) && time() < strtotime( '19:08AM' ) ||
-    time() > strtotime( '20:03AM' ) && time() < strtotime( '20:08AM' ) ||
-    time() > strtotime( '21:03AM' ) && time() < strtotime( '21:08AM' ) ||
-    time() > strtotime( '22:03AM' ) && time() < strtotime( '22:08AM' ) ||
-    time() > strtotime( '23:03AM' ) && time() < strtotime( '23:08AM' ))
+{if (time() > strtotime( '00:03' ) && time() < strtotime( '00:08' ) ||
+    time() > strtotime( '01:03' ) && time() < strtotime( '01:08' ) ||
+    time() > strtotime( '02:03' ) && time() < strtotime( '02:08' ) ||
+    time() > strtotime( '03:03' ) && time() < strtotime( '03:08' ) ||
+    time() > strtotime( '04:03' ) && time() < strtotime( '04:08' ) ||
+    time() > strtotime( '05:03' ) && time() < strtotime( '05:08' ) ||
+    time() > strtotime( '06:03' ) && time() < strtotime( '06:08' ) ||
+    time() > strtotime( '07:03' ) && time() < strtotime( '07:08' ) ||
+    time() > strtotime( '08:03' ) && time() < strtotime( '08:08' ) ||
+    time() > strtotime( '09:03' ) && time() < strtotime( '09:08' ) ||
+    time() > strtotime( '10:03' ) && time() < strtotime( '10:08' ) ||
+    time() > strtotime( '11:03' ) && time() < strtotime( '11:08' ) ||
+    time() > strtotime( '12:03' ) && time() < strtotime( '12:08' ) ||
+    time() > strtotime( '13:03' ) && time() < strtotime( '13:08' ) ||
+    time() > strtotime( '14:03' ) && time() < strtotime( '14:08' ) ||
+    time() > strtotime( '15:03' ) && time() < strtotime( '15:08' ) ||
+    time() > strtotime( '16:03' ) && time() < strtotime( '16:08' ) ||
+    time() > strtotime( '17:03' ) && time() < strtotime( '17:08' ) ||
+    time() > strtotime( '18:03' ) && time() < strtotime( '18:08' ) ||
+    time() > strtotime( '19:03' ) && time() < strtotime( '19:08' ) ||
+    time() > strtotime( '20:03' ) && time() < strtotime( '20:08' ) ||
+    time() > strtotime( '21:03' ) && time() < strtotime( '21:08' ) ||
+    time() > strtotime( '22:03' ) && time() < strtotime( '22:08' ) ||
+    time() > strtotime( '23:03' ) && time() < strtotime( '23:08' ))
     {$statues = $connection->post("statuses/update", ["status" => "NOT YET \n$postdate"])
     ;}
     ;} 
